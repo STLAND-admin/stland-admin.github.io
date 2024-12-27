@@ -22,17 +22,23 @@
                 <p class="name" style="text-align: center;">
                   Yinji ShenTu
                 </p>
-                <p>I am currently a research assistant in <a href = "https://github.com/zju3dv">ZJU3DV</a>, advised by <a href = "https://xzhou.me/">Xiaowei Zhou</a> in Zhejiang University. 
-                  Before join ZJU3DV, I received my B.S. degree from <a href="https://www.dlut.edu.cn/">Dalian University of Technology</a> and MSc degree from <a href="https://www.hku.hk/">The University of Hong Kong</a>. I used to work as an intern algorithm researcher at <a herf="https://www.hikvision.com/">Hikvision</a>.
+                <p>I am currently a Ph.D. student in <a href = "https://github.com/zju3dv">ZJU3DV</a> since 2024, advised by <a href = "https://xzhou.me/">Xiaowei Zhou</a> and Wei Hua in Zhejiang University. 
+                  I used to work as a research assistant at the group. 
+                  Before join ZJU3DV, I received my B.S. degree from <a href="https://www.dlut.edu.cn/">Dalian University of Technology</a> 
+                  and MSc degree from <a href="https://www.hku.hk/">The University of Hong Kong</a>. 
+                  I used to work as an intern algorithm researcher at <a herf="https://www.hikvision.com/">Hikvision</a> focus on improve the quality of CCTV.
+                  
                 </p>
                 <p>
-                  My research interests are in computer vision and graphics, especially with deep learning. Recently I focus on 3D vision and editing.
-                  Although I have just started my research career, my vision is to enable computers to better understand and simulate the real world, which corresponds to vision and graphics tasks.
+                  My research interests are in computer <i>vision</i> and <strong>graphics</strong>, 
+                  especially with deep learning. My vision is to enable computers to better <i>understand</i> and <strong>simulate</strong> the real world, which corresponds to <i>vision</i> -- <strong>graphics</strong> tasks.
+                  In the first two years, I majorly explored the editiability of volumetric video reconstructed, especially reconstructed fron monocular video.
                 </p>
                 <p style="text-align:center">
                   <a href="styj@connect.hku.hk">Email</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=oIrYzk8AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/STLAND-admin">Github</a>
+                  <a href="https://github.com/STLAND-admin">Github</a> &nbsp;/&nbsp;
+                  <a href="https://x.com/STLand_">X</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -52,15 +58,93 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
-    
-      <tr onmouseout="DynE_stop()" onmouseover="DynE_start()" >
+        <!-- Diffusion relighting -->
+        <tr onmouseout="DynE_stop()" onmouseover="DynE_start()" >
+          <td style="padding:20px;width:25%;vertical-align:baseline">
+            <div class="one">
+              <img src='images\Diff-render\Teaser.png' width="160" style="padding-top: 35px;">  <!-- algin in this case --> 
+            </div>
+          </td>
+          <td style="padding:0px;width:75%;vertical-align:middle">
+            <a href="https://dyn-e.github.io/">
+              <span class="papertitle">Diffusion-based Photo-realistic Rendering with Scalable Synthetic-real Paired Data</span>
+            </a>
+            <br>
+            <a>Junkang Hu</a>,
+            <strong>Yinji ShenTu</strong>,
+            <a href="https://pengsida.net/">Sida Peng</a>,
+            <a>Yida Wang</a>, <a>Haiyang Sun</a>,<a>Kun Zhan</a>, <a>Peng Jia</a>, <a>XianPeng Lang</a>, <a>Ruizhen Hu</a>, 
+            <a href="https://xzhou.me/">Xiaowei Zhou</a>
+            <br>
+            
+            <a href="https://openreview.net/forum?id=ggpMxidc3v&nesting=2&sort=date-desc">papers</a>
+            <p></p>
+            <p>
+            A new rendering method base diffusion model with Scalable Synthetic-real paired data.
+            </p>
+          </td>
+        </tr>
+
+
+          <!-- Volumetric Video style transfer 
+      
+      <tr onmouseout="VolVideoStyle_stop()" onmouseover="VolVideoStyle_start()" >
         <td style="padding:20px;width:25%;vertical-align:baseline">
           <div class="one">
             <div class="two" id='DynE_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/DynE.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
-            <img src='images/DynE.png' width="160" style="padding-top: 35px;">  <!-- algin in this case --> 
+            <img src='images/DynE.png' width="160" style="padding-top: 35px;">  --> <!-- algin in this case -->
+         <!-- </div> -->
+
+         <!-- <script type="text/javascript">
+            function VolVideoStyle_start() {
+              document.getElementById('DynE_image').style.opacity = "1";
+            }
+
+            function VolVideoStyle_stop() {
+              document.getElementById('DynE_image').style.opacity = "0";
+            }
+            DynE_stop()
+          </script>
+        </td>
+        <td style="padding:0px;width:75%;vertical-align:middle">
+          <a href="https://dyn-e.github.io/">
+            <span class="papertitle">Dyn-E: Local Appearance Editing of Dynamic Neural Radiance Fields</span>
+          </a>
+          <br>
+          <a href="https://zhanghe3z.github.io/">Shangzhan Zhang</a>,
+          <strong>Yinji ShenTu</strong>,
+          <a>Mingyue Xu</a>,
+          <a href="https://pengsida.net/">Sida Peng</a>,
+          <a href="https://chingswy.github.io/">Shuai Qing</a>,
+          <a href="https://tianrun-chen.github.io/">Tianrun Chen</a>,
+          <a href="https://www.yukaicheng.cn/">Kaicheng Yu</a>,
+          <a href="https://scholar.google.com/citations?user=AZCcDmsAAAAJ">Hujun Bao</a>,
+          <a href="https://xzhou.me/">Xiaowei Zhou</a>
+          <br>
+          <a href="https://dyn-e.github.io/">project page</a>
+          /
+          <a href="https://dyn-e.github.io/">video</a>
+          /
+          <a href="https://arxiv.org/abs/2307.12909">papers</a>
+          <p></p>
+          <p>
+          First one try to solve dynamic appearance edit with only single-image input for volumetric video.
+          </p>
+        </td>
+      </tr> -->
+      
+      <!--  DynE -->
+      <tr onmouseout="DynE_stop()" onmouseover="DynE_start()" >
+        <td style="padding:20px;width:25%;vertical-align:baseline">
+          <div class="one">
+            <div class="two" id='DynE_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/DynE/DynE.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/DynE/DynE.png' width="160" style="padding-top: 35px;">  <!-- algin in this case --> 
           </div>
           <script type="text/javascript">
             function DynE_start() {
@@ -79,8 +163,9 @@
           </a>
           <br>
           <a href="https://zhanghe3z.github.io/">Shangzhan Zhang</a>,
-          <a href="https://pengsida.net/">Sida Peng</a>,
           <strong>Yinji ShenTu</strong>,
+          <a>Mingyue Xu</a>,
+          <a href="https://pengsida.net/">Sida Peng</a>,
           <a href="https://chingswy.github.io/">Shuai Qing</a>,
           <a href="https://tianrun-chen.github.io/">Tianrun Chen</a>,
           <a href="https://www.yukaicheng.cn/">Kaicheng Yu</a>,
@@ -91,10 +176,10 @@
           /
           <a href="https://dyn-e.github.io/">video</a>
           /
-          <a href="https://arxiv.org/abs/2307.12909">arXiv</a>
+          <a href="https://arxiv.org/abs/2307.12909">papers</a>
           <p></p>
           <p>
-          First one try to solve dynamic appearance edit with only single-image input.
+          First one try to solve dynamic appearance edit with only single-image input for volumetric video.
           </p>
         </td>
       </tr>
