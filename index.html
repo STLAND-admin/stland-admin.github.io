@@ -9,35 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon" href="images\icon.png">
+    <link rel="icon" href="images/icon.png">
   </head>
 
   <body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="profile-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Yinji ShenTu
                 </p>
-                <p>I am currently a Ph.D. student in <a href = "https://github.com/zju3dv">ZJU3DV</a> since 2024, advised by <a href = "https://xzhou.me/">Xiaowei Zhou</a> and Wei Hua in Zhejiang University. 
-                  I used to work as a research assistant at the group. 
-                  Before join ZJU3DV, I received my B.S. degree from <a href="https://www.dlut.edu.cn/">Dalian University of Technology</a> 
-                  and MSc degree from <a href="https://www.hku.hk/">The University of Hong Kong</a>. 
-                  I used to work as an intern algorithm researcher at <a herf="https://www.hikvision.com/">Hikvision</a> focus on improve the quality of CCTV.
-                  
-                </p>
-                <p>
-                  My research interests are in computer <i>vision</i> and <strong>graphics</strong>, 
-                  especially with deep learning. My vision is to enable computers to better <i>understand</i> and <strong>simulate</strong> the real world, which corresponds to <i>vision</i> -- <strong>graphics</strong> tasks.
-                  In the first two years, I majorly explored the editiability of volumetric video reconstructed, especially reconstructed fron monocular video.
-                </p>
+                <p>I am a Ph.D. student in the <a href="https://github.com/zju3dv">ZJU3DV group</a> at Zhejiang University, where I have studied since 2024 under the supervision of <a href="https://xzhou.me/">Xiaowei Zhou</a> and Wei Hua. I previously worked as a research assistant in the group. I received a B.S. from <a href="https://www.dlut.edu.cn/">Dalian University of Technology</a> and an M.Sc. from <a href="https://www.hku.hk/">The University of Hong Kong</a>. I also worked as an algorithm research intern at <a href="https://www.hikvision.com/">Hikvision</a> on improving CCTV image quality.</p>
+                <p>My research spans computer vision and graphics, with a focus on learning-based reconstruction and editing of volumetric video, including video reconstructed from monocular footage.</p>
                 <p style="text-align:center">
-                  <a href="styj@zju.edu.cn">Email</a> &nbsp;/&nbsp;
+                  <a href="mailto:styj@zju.edu.cn">Email</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=oIrYzk8AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/STLAND-admin">Github</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/STLAND-admin">GitHub</a> &nbsp;/&nbsp;
                   <a href="https://x.com/STLand_">X</a>
                 </p>
               </td>
@@ -51,13 +41,59 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research interests are mentioned above. Representative papers are <span class="highlight">highlighted</span>.
+                  Selected research projects are listed below. A highlighted entry denotes a representative publication.
                 </p>
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
+          <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <!-- DynOLAT -->
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:baseline">
+          <div class="one"><span class="paper-placeholder">DynOLAT</span></div>
+        </td>
+        <td style="padding:0px;width:75%;vertical-align:middle">
+          <span class="papertitle">DynOLAT: OLAT Video Prediction for Controllable Dynamic Full-Body Relighting</span>
+          <br>
+          Taoming Liu<sup>*</sup>, <strong>Yinji ShenTu<sup>*</sup></strong>, Guangzhao He, Yudong Jin, Yukang Ye, Siyu Zhang, Fan Jia, Wei Hua, Hujun Bao, Xiaowei Zhou
+          <br>
+          <em>ACM Transactions on Graphics</em> (SIGGRAPH Asia 2026), accepted
+          <br>
+          <small>* Equal contribution</small>
+        </td>
+      </tr>
+
+      <!-- RealMe -->
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:baseline">
+          <div class="one"><span class="paper-placeholder">RealMe</span></div>
+        </td>
+        <td style="padding:0px;width:75%;vertical-align:middle">
+          <span class="papertitle">RealMe: Immersive Volumetric Video from Minimal Captures</span>
+          <br>
+          Chenxu Zhou, Zhiyuan Yu, Yudong Jin, <strong>Yinji ShenTu</strong>, Yu Zhang, Jiaming Sun, Xiaowei Zhou
+          <br>
+          <em>SIGGRAPH Asia</em>, 2026 (Conference Paper), accepted
+          <p>High-resolution volumetric video from sparse, low-resolution captures.</p>
+        </td>
+      </tr>
+
+      <!-- Track4D-Calib -->
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:baseline">
+          <div class="one"><span class="paper-placeholder">Track4D-Calib</span></div>
+        </td>
+        <td style="padding:0px;width:75%;vertical-align:middle">
+          <span class="papertitle">Track4D-Calib: Track-Driven Geometric Closure for 4D Camera-Array Calibration</span>
+          <br>
+          Dongli Tan, Tao Xie, Yunsheng Luo, <strong>Yinji ShenTu</strong>, Yudong Jin, Yu Zhang, Jiaming Sun, Xiaowei Zhou
+          <br>
+          <em>SIGGRAPH Asia</em>, 2026 (Conference Paper), accepted
+          <p>Temporally coherent calibration of dynamic and static cameras in 4D capture systems.</p>
+        </td>
+      </tr>
+
       <!--  DynE -->
 
       <tr onmouseout="DynE_stop()" onmouseover="DynE_start()" bgcolor="#ffffd0">
@@ -67,7 +103,7 @@
             <source src="images/DynE/DynE.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
-            <img src='images/DynE/DynE.png' width="160" style="padding-top: 35px;">  <!-- algin in this case --> 
+            <img src='images/DynE/DynE.png' width="160" style="padding-top: 35px;">  <!-- algin in this case -->
           </div>
           <script type="text/javascript">
             function DynE_start() {
@@ -85,85 +121,30 @@
             <span class="papertitle">Dyn-E: Local Appearance Editing of Dynamic Neural Radiance Fields</span>
           </a>
           <br>
-          <a href="https://zhanghe3z.github.io/">Shangzhan Zhang</a>,
           <strong>Yinji ShenTu</strong>,
-          <a>Mingyue Xu</a>,
-          <a href="https://pengsida.net/">Sida Peng</a>,
-          <a href="https://chingswy.github.io/">Shuai Qing</a>,
+          <a href="https://zhanghe3z.github.io/">Shangzhan Zhang</a>,
+          Mingyue Xu,
+          <a href="https://chingswy.github.io/">Qing Shuai</a>,
           <a href="https://tianrun-chen.github.io/">Tianrun Chen</a>,
-          <a href="https://www.yukaicheng.cn/">Kaicheng Yu</a>,
-          <a href="https://scholar.google.com/citations?user=AZCcDmsAAAAJ">Hujun Bao</a>,
-          <a href="https://xzhou.me/">Xiaowei Zhou</a>
-          <br>
-          <a href="images/DynE/Chinagraph2024 best paper.jpg"><em>Chinagraph</em>, 2024 &nbsp <font color="red"><strong>(Best Paper Award!)</strong></font></a>
+          <a href="https://pengsida.net/">Sida Peng</a>,
+          <a href="https://xzhou.me/">Xiaowei Zhou</a>          <br>
+          <em>Computers &amp; Graphics</em>, 126:104140, 2025 (Chinagraph 2024 special section) &nbsp; <a href="images/DynE/Chinagraph2024 best paper.jpg"><strong>Chinagraph 2024 Best Paper Award</strong></a>
           <br>
           <a href="https://dyn-e.github.io/">project page</a>
           /
           <a href="https://dyn-e.github.io/">video</a>
           /
-          <a href="https://arxiv.org/abs/2307.12909">paper</a>
+          <a href="https://doi.org/10.1016/j.cag.2024.104140">published paper</a>
           <p></p>
           <p>
-          <font color="green"><strong>DRAW:</strong></font> solution to dynamic appearance edit with only single-image input for volumetric video.
-          </p>
-        </td>
-      </tr>
-
-
-      <!-- DS-Hybird-GS -->
-      <tr onmouseout="DSGS_stop()" onmouseover="DSGS_start()" >
-        <td style="padding:20px;width:25%;vertical-align:baseline">
-          <div class="one">
-            <img src='images\DSGS\Teaser_v2-1.png' width="160" style="padding-top: 35px;">  <!-- algin in this case --> 
-          </div>
-        </td>
-        <td style="padding:0px;width:75%;vertical-align:middle">
-          <a href="https://openreview.net/forum?id=V3ogrjBbPy&noteId=V3ogrjBbPy">
-            <span class="papertitle">DS-Hybrid GS: auto-reconstruction and decomposition from monocular video</span>
-          </a>
-          <br>
-          <!-- <strong>Yinji ShenTu</strong>,
-            -->under review
-          <br>
-          
-          <a href="papers\DS_Hybrid_GS.pdf">paper</a>
-          <p></p>
-          <p>
-          <font color="Grey"><strong>REMOVE:</strong></font> automatic reconstruction and decomposition for monocular videos</p>
-        </td>
-      </tr>    
-
-      <!-- Diffusion relighting -->
-      <tr onmouseout="DiffRender_stop()" onmouseover="DiffRender_start()" >
-        <td style="padding:20px;width:25%;vertical-align:baseline">
-          <div class="one">
-            <img src='images\Diff-render\Teaser.png' width="160" style="padding-top: 35px;">  <!-- algin in this case --> 
-          </div>
-        </td>
-        <td style="padding:0px;width:75%;vertical-align:middle">
-          <a href="papers\DiffRender.pdf">
-            <span class="papertitle">Diffusion-based Photo-realistic Rendering with Scalable Synthetic-real Paired Data</span>
-          </a>
-          <br>
-          under review
-          <!-- <a>Junkang Hu</a>,
-          <strong>Yinji ShenTu</strong>,
-          <a href="https://pengsida.net/">Sida Peng</a>,
-          <a>Yida Wang</a>, <a>Haiyang Sun</a>,<a>Kun Zhan</a>, <a>Peng Jia</a>, <a>XianPeng Lang</a>, <a>Ruizhen Hu</a>, 
-          <a href="https://xzhou.me/">Xiaowei Zhou</a> -->
-          <br>
-          
-          <a href="papers\DiffRender.pdf">paper</a>
-          <p></p>
-          <p>
-          <font color="purple"><strong>INSERT:</strong></font> Photo-realistic rendering method base diffusion model with Scalable Synthetic-real paired data.
+          <font color="green"><strong>DRAW:</strong></font> Local appearance editing of dynamic neural radiance fields using edits to a single video frame.
           </p>
         </td>
       </tr>
 
 
           <!-- Volumetric Video style transfer -->
-      
+
       <tr onmouseout="VolVideoStyle_stop()" onmouseover="VolVideoStyle_start()" >
         <td style="padding:20px;width:25%;vertical-align:baseline">
           <div class="one">
@@ -200,13 +181,17 @@
           <a href="papers/VolVideoStyle.pdf">paper</a>
           <p></p>
           <p>
-          <font color="Blue"><strong>STYLE:</strong></font> Volumetric video stylization </p>
+          <font color="Blue"><strong>STYLE:</strong></font> Volumetric video stylization.</p>
         </td>
       </tr>
 
-            
-            
+
+
           </tbody></table>
+          <section class="academic-service">
+            <h2>Academic Service</h2>
+            <p>Organizer and point of contact, <a href="https://zju3dv.github.io/sigasia2026-vvc/">2nd Volumetric Video Challenge</a>, SIGGRAPH Asia 2026 Workshops (accepted).</p>
+          </section>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">

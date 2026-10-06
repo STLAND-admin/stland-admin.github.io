@@ -133,3 +133,21 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Keep the publication layout readable on narrow screens. */
+@media (max-width: 600px) {
+  body { margin: 8px; }
+  table { max-width: 100%; }
+  td { overflow-wrap: anywhere; }
+  .one, .two { max-width: 100%; }
+  .one img, .one video { max-width: 100%; height: auto; }
+  .profile-table tr, .publication-table tr { display: flex; flex-direction: column; }
+  .profile-table td:last-child { text-align: center; }
+  .profile-table td:last-child img { max-width: 220px !important; }
+  .profile-table td, .publication-table td { box-sizing: border-box; width: 100% !important; max-width: 100% !important; }
+  .publication-table td:first-child { padding-bottom: 0 !important; }
+  .publication-table td:last-child { padding: 0 20px 20px !important; }
+}
+.academic-service { padding: 20px; }
+
+.paper-placeholder { display: flex; align-items: center; justify-content: center; width: 160px; height: 160px; background: #f2f3f5; color: #555; font-weight: 700; letter-spacing: .04em; }
