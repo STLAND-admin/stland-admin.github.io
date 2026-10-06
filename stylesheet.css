@@ -148,6 +148,4 @@ span.highlight {
   .publication-table td:first-child { padding-bottom: 0 !important; }
   .publication-table td:last-child { padding: 0 20px 20px !important; }
 }
-.academic-service { padding: 20px; }
-
-.paper-placeholder { display: flex; align-items: center; justify-content: center; width: 160px; height: 160px; background: #f2f3f5; color: #555; font-weight: 700; letter-spacing: .04em; }
+.paper-teaser { width: 160px; height: 160px; object-fit: contain; }
