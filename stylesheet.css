@@ -149,3 +149,22 @@ span.highlight {
   .publication-table td:last-child { padding: 0 20px 20px !important; }
 }
 .paper-teaser { width: 160px; height: 160px; object-fit: contain; }
+
+/* Publication cards: consistent image, text, and link alignment. */
+.publication-card td { vertical-align: middle; }
+.publication-card.featured { background: #ffffd0; }
+.publication-image { box-sizing: border-box; width: 25%; padding: 18px 12px 18px 20px; }
+.publication-details { box-sizing: border-box; width: 75%; padding: 18px 20px 18px 8px; }
+.publication-image .paper-teaser { display: block; width: 160px; height: 116px; object-fit: contain; }
+.publication-details .papertitle { display: block; font-size: 16px; line-height: 1.3; }
+.publication-meta { margin-top: 5px; color: #444; line-height: 1.4; }
+.publication-links { display: flex; flex-wrap: wrap; gap: 0 8px; margin-top: 6px; }
+.publication-details p { margin: 9px 0 0; line-height: 1.45; }
+@media (max-width: 600px) {
+  .publication-card { margin-bottom: 12px; }
+  .publication-image { padding: 16px 20px 4px !important; }
+  .publication-details { padding: 0 20px 16px !important; }
+  .publication-image .paper-teaser { width: 100%; max-width: 260px; height: auto; max-height: 150px; object-fit: contain; object-position: left center; }
+}
+.publication-card.featured td { background-color: #ffffd0; }
+.publication-card td { border-bottom: 1px solid #f0f0f0; }
