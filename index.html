@@ -7,12 +7,23 @@
 
     <meta name="author" content="Yinji ShenTu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (_) {
+        document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+    </script>
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" href="images/icon.png">
   </head>
 
   <body>
+    <div class="theme-control"><button id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">☾ <span>Dark mode</span></button></div>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -49,22 +60,24 @@
           </tbody></table>
           <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr class="publication-card featured">
-              <td class="publication-image" style="background-color:#ffffd0"><a href="" title="Project page coming soon"><img class="paper-teaser" src="images/SIGA2026/DynOLAT.jpg" alt="DynOLAT representative image"></a></td>
-              <td class="publication-details" style="background-color:#ffffd0">
+              <td class="publication-image"><a href="" title="Project page coming soon"><img class="paper-teaser" src="images/SIGA2026/DynOLAT.jpg" alt="DynOLAT representative image"></a></td>
+              <td class="publication-details">
                 <a href="" title="Project page coming soon" class="papertitle">DynOLAT: OLAT Video Prediction for Controllable Dynamic Full-Body Relighting</a>
                 <div class="publication-meta"><em>ACM Transactions on Graphics</em> · SIGGRAPH Asia 2026 · Accepted · Co-first author</div>
+                <div class="publication-tags" aria-label="Research topics"><span class="paper-tag tag-volumetric-video">Volumetric Video</span><span class="paper-tag tag-relighting">Relighting</span><span class="paper-tag tag-video-generation">Video Generation</span><span class="paper-tag tag-datasets">Datasets</span></div>
                 <div class="publication-links"><a href="" title="Project page coming soon">Project page</a></div>
                 <p><strong>TL;DR:</strong> Predicts OLAT video for controllable relighting of dynamic full-body performances.</p>
                 <p class="contribution-note">My main contribution: leading the dynamic full-body OLAT dataset, covering 224 identity–outfit combinations.</p>
               </td>
             </tr>
             <tr class="publication-card featured">
-              <td class="publication-image" style="background-color:#ffffd0"><a href="https://dyn-e.github.io/"><img class="paper-teaser" src="images/DynE/DynE.png" alt="Dyn-E representative image"></a></td>
-              <td class="publication-details" style="background-color:#ffffd0">
+              <td class="publication-image"><a href="https://dyn-e.github.io/"><img class="paper-teaser" src="images/DynE/DynE.png" alt="Dyn-E representative image"></a></td>
+              <td class="publication-details">
                 <a href="https://dyn-e.github.io/" class="papertitle">Dyn-E: Local Appearance Editing of Dynamic Neural Radiance Fields</a>
                 <div class="publication-meta"><em>Computers &amp; Graphics</em> 126:104140 · 2025 · First author</div>
-                <div class="publication-links"><a href="https://dyn-e.github.io/">Project page</a><span>/</span><a href="https://doi.org/10.1016/j.cag.2024.104140">Published paper</a><span>/</span><a href="images/DynE/Chinagraph2024 best paper.jpg">Chinagraph 2024 Best Paper Award</a></div>
-                <p><strong>TL;DR:</strong> Edit the local appearance of a volumetric video from a single edited frame.</p>
+                <div class="publication-tags" aria-label="Research topics"><span class="paper-tag tag-volumetric-video">Volumetric Video</span><span class="paper-tag tag-appearance-editing">Appearance Editing</span><span class="paper-tag tag-tracking">Tracking</span></div>
+                <div class="publication-links"><a href="https://dyn-e.github.io/">Project page</a><span>/</span><a class="award-link" href="images/DynE/Chinagraph2024 best paper.jpg">ChinaGraph 2024 Best Paper</a></div>
+                <p><strong>TL;DR:</strong> Edits the local appearance of a volumetric video from a single edited frame.</p>
               </td>
             </tr>
             <tr class="publication-card">
@@ -72,6 +85,7 @@
               <td class="publication-details">
                 <a href="https://zju3dv.github.io/sigasia2026-vvc/" class="papertitle">2nd Volumetric Video Challenge</a>
                 <div class="publication-meta"><em>SIGGRAPH Asia 2026 Workshops</em> · First organizer</div>
+                <div class="publication-tags" aria-label="Research topics"><span class="paper-tag tag-volumetric-video">Volumetric Video</span><span class="paper-tag tag-challenge">Challenge</span></div>
                 <div class="publication-links"><a href="https://zju3dv.github.io/sigasia2026-vvc/">Workshop and challenge website</a></div>
                 <p><strong>TL;DR:</strong> A workshop and challenge on volumetric video compression and sparse-view reconstruction.</p>
               </td>
@@ -81,8 +95,9 @@
               <td class="publication-details">
                 <a href="" title="Project page coming soon" class="papertitle">RealMe: Immersive Volumetric Video from Minimal Captures</a>
                 <div class="publication-meta"><em>SIGGRAPH Asia 2026</em> · Conference Paper · Accepted</div>
+                <div class="publication-tags" aria-label="Research topics"><span class="paper-tag tag-volumetric-video">Volumetric Video</span><span class="paper-tag tag-super-resolution">Super-Resolution</span><span class="paper-tag tag-video-generation">Video Generation</span></div>
                 <div class="publication-links"><a href="" title="Project page coming soon">Project page</a></div>
-                <p><strong>TL;DR:</strong> Recover high-resolution volumetric video from sparse, low-resolution captures.</p>
+                <p><strong>TL;DR:</strong> Recovers high-resolution volumetric video from sparse, low-resolution captures.</p>
               </td>
             </tr>
             <tr class="publication-card">
@@ -90,8 +105,9 @@
               <td class="publication-details">
                 <a href="" title="Project page coming soon" class="papertitle">Track4D-Calib: Track-Driven Geometric Closure for 4D Camera-Array Calibration</a>
                 <div class="publication-meta"><em>SIGGRAPH Asia 2026</em> · Conference Paper · Accepted</div>
+                <div class="publication-tags" aria-label="Research topics"><span class="paper-tag tag-volumetric-video">Volumetric Video</span><span class="paper-tag tag-tracking">Tracking</span></div>
                 <div class="publication-links"><a href="" title="Project page coming soon">Project page</a></div>
-                <p><strong>TL;DR:</strong> Calibrate dynamic and static cameras in 4D capture systems with temporally coherent tracks.</p>
+                <p><strong>TL;DR:</strong> Calibrates dynamic and static cameras in 4D capture systems with temporally coherent tracks.</p>
               </td>
             </tr>
 
@@ -103,7 +119,7 @@
           </section>
           <section class="homepage-section">
             <h2>Awards</h2>
-            <p><a href="images/DynE/Chinagraph2024 best paper.jpg">Chinagraph 2024 Best Paper Award</a> — <em>Dyn-E: Local Appearance Editing of Dynamic Neural Radiance Fields</em>.</p>
+            <p><a class="award-link" href="images/DynE/Chinagraph2024 best paper.jpg">ChinaGraph 2024 Best Paper Award</a> — <em>Dyn-E: Local Appearance Editing of Dynamic Neural Radiance Fields</em>.</p>
           </section>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -118,5 +134,28 @@
         </td>
       </tr>
     </table>
+    <script>
+      const themeButton = document.getElementById('theme-toggle');
+      function updateThemeButton() {
+        const isDark = document.documentElement.dataset.theme === 'dark';
+        themeButton.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} mode`);
+        themeButton.setAttribute('aria-pressed', String(isDark));
+        themeButton.innerHTML = isDark ? '☀ <span>Light mode</span>' : '☾ <span>Dark mode</span>';
+      }
+      themeButton.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (_) {}
+        updateThemeButton();
+      });
+      matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        try {
+          if (localStorage.getItem('theme')) return;
+        } catch (_) {}
+        document.documentElement.dataset.theme = event.matches ? 'dark' : 'light';
+        updateThemeButton();
+      });
+      updateThemeButton();
+    </script>
   </body>
 </html>
