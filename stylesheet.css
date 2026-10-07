@@ -234,6 +234,8 @@ span.highlight {
   .publication-image .paper-teaser { width: 100%; max-width: 260px; height: auto; max-height: 150px; object-fit: contain; object-position: left center; }
 }
 .publication-card.featured td { background-color: var(--featured); }
+:root[data-theme="dark"] .publication-card.featured,
+:root[data-theme="dark"] .publication-card.featured td { background-color: #26384d; }
 .publication-card td { border-bottom: 1px solid var(--divider); }
 .contribution-note { margin-top: 4px !important; color: var(--note); font-size: 12px; }
 
